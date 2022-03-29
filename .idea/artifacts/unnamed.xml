@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="unnamed">
+    <output-path>$PROJECT_DIR$/out/artifacts/unnamed</output-path>
+    <root id="archive" name="unnamed.war">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="servlets-listeners-filters" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="servlets-listeners-filters/web/Web" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>TODO supply a title</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<h2>Examples servlet with listeners and filters</h2>
+This is a <a href="DemoServlet">Demo Servlet</a> for which we can attach several listeners. Just comment/uncomment the classes you want to use.
+
+<p>Listener classes are very convenient to attach code to Servlet events.
+Events are of two kinds: lifecycle changes and attribute changes.
+Typical servlets events are: receiving a request, changes in session data.
+</p>
+
+<p>Consider a Web application comprising servlets that access a database. A typical use of the event listener mechanism would be to create a servlet context lifecycle event listener to manage the database connection. This listener may function as follows:
+<ol><li>The listener is notified of application startup.
+  <li>The application logs in to the database and stores the connection object in the servlet context.
+  <li>Servlets use the database connection to perform SQL operations.
+  <li>The listener is notified of imminent application shutdown (shutdown of the Web server or removal of the application from the Web server).
+  <li>Prior to application shutdown, the listener closes the database connection.
+</ol>
+
+<p>This is an <a href="account">Account</a> servlet based on session listener to create a BankAccount object and filter (RequestLoggingFilter) to trace requests</a> .</p>
+
+
+<h2>Note: how to create a generic Error page</h2>
+<p>
+  Look at the web.xml file and how you can define a generic error page for all 404 errors.
+  For example if you <a href="foobar">click here</a> you will see the error page because such URL does not exists.
+</p>
+</body>
+</html>

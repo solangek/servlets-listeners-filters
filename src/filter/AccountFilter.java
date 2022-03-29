@@ -14,10 +14,10 @@ Notice the URL pattern: we catch any URL of the form /account/*
 uncomment the @WebFilter annotation to see the effect
  */
 
-@WebFilter(
-        urlPatterns = "/account/*",
-        filterName = "Account Filter",
-        description = "Filter all account transaction URLs")
+//@WebFilter(
+//        urlPatterns = "/account/*",
+//        filterName = "Account Filter",
+//        description = "Filter all account transaction URLs")
 public class AccountFilter implements javax.servlet.Filter {
 
     public void init(FilterConfig filterConfig) throws ServletException {

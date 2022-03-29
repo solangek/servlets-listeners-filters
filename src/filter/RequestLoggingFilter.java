@@ -10,7 +10,7 @@ import java.util.Enumeration;
  * this filter intercepts ALL requests and prints them in the log
  * uncomment the @WebFilter annotation to enable
  */
-//@WebFilter(urlPatterns = "*", filterName = "logging", description = "log all requests")
+@WebFilter(urlPatterns = "*", filterName = "logging", description = "log all requests")
 public class RequestLoggingFilter implements Filter {
     private ServletContext context;
 
